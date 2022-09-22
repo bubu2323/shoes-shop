@@ -1,0 +1,103 @@
+:root {
+  --background_black: #181818;
+  --grey: rgb(150, 142, 142);
+  --orange: #ffba00;
+  --orange_shoes: rgb(216, 155, 0);
+  --lightblue: rgb(62, 127, 197);
+  --darkblue: rgb(20, 81, 123);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--background_black);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  overflow-x: hidden;
+}
+/*--- CARD ---*/
+/*header card*/
+.card {
+  box-shadow: 0 30 50 rgba(255, 234, 0, 0.2);
+  width: 25em;
+  background-image: linear-gradient(
+    to bottom,
+    var(--lightblue),
+    /* var(--orange_shoes), */
+    var(--orange_shoes),
+    var(--orange)
+  );
+  border: none;
+  max-height: 90%;
+}
+.container_logo_price {
+  padding: 2em;
+  z-index: 1;
+}
+
+#price_card {
+  color: var(--darkblue);
+}
+div.description {
+  padding: 2em 2em 0;
+  z-index: 1;
+  color: #fff;
+}
+.model {
+  padding: 0.2em 0;
+}
+/* main card */
+.container_shoes {
+}
+.shoes_img {
+  top: 3em;
+  right: 2em;
+  max-width: 30em;
+  z-index: 1;
+}
+/* footer card */
+.container-btn {
+  padding: 3em 2em 2em 2em;
+  text-align: center;
+  background-color: #fff;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+.btn-footer {
+  width: 13em;
+  padding: 0.5em;
+  border: 1px solid var(--orange);
+}
+.btn-footer:hover {
+  background-color: var(--orange) !important;
+}
+.container_big_txt {
+  position: relative;
+}
+.watermark_container{
+    left: 0px;
+    position: absolute;
+    top: 0px;
+}
+.watermark_body {
+    color: var(--background_black);
+    opacity: 0.3;
+    top: 1.4em;
+    font-size: 13rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
