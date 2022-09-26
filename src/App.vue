@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container ">
     <select class="form-select" name="brand" id="" v-model="selectedBrand">
       <option value="all">Show all</option>
       <option v-for="brand in brands()" :value="brand">{{ brand }}</option>
@@ -39,7 +39,7 @@ export default {
       <template v-for="shoe in shoes">
         <div
           v-if="shoe.brand == selectedBrand || selectedBrand == 'all'"
-          class="col-md-4 my-3"
+          class="col-md my-3"
         >
 
           <div class="card">
