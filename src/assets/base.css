@@ -69,26 +69,32 @@ div.description {
   background-color: var(--orange) !important;
 }
 /* watermark container */
-.container_big_txt {
-  position: relative;
-}
+
 .container-btn {
   padding: 3em 2em 2em 2em;
   text-align: center;
   background-color: #fff;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
+
+
 }
-.watermark_container {
+/* .watermark_container {
   left: 0px;
   position: absolute;
   top: 0px;
+  overflow: none;
+  
+
 }
 .watermark_body {
-  color: var(--background_black);
+  color: var(--lightblue);
   opacity: 0.3;
   top: 1.4em;
-  font-size: 13rem;
+  font-size: 16rem;
   font-weight: 700;
   text-transform: uppercase;
-}
+  word-break: break-word;
+  
+ 
+} */

@@ -43,11 +43,11 @@ export default {
         >
 
           <div class="card">
-            <div class="container_big_txt">
+            <!-- <div class="container_big_txt">
               <div class="watermark_container">
                 <p class="watermark_body">{{ shoe.brand }}</p>
               </div>
-            </div>
+            </div> -->
             <div class="d-flex justify-content-between container_logo_price">
               <img :src="shoe.logo" alt="logo" id="logo_header" />
               <h4 id="price_card">{{ shoe.price }}€</h4>
